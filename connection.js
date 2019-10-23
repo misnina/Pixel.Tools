@@ -3,7 +3,11 @@ var peer;
 function connectStart() {
 
 	//custom server
-	peer = new Peer($('#connect_alias').val(), { host: 'pixel-tool.herokuapp.com/', port: 9000, path: '/' });
+	peer = new Peer($('#connect_alias').val(), {
+		host: "sapphire-peerjs.herokuapp.com",
+		secure: true,
+		port: 443,
+	});
 
 	// Connect to PeerJS, have server assign an ID instead of providing one
 	// Showing off some of the configs available with PeerJS :).
