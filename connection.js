@@ -4,7 +4,7 @@ function connectStart() {
 
 	//custom server
 	peer = new Peer($('#connect_alias').val(), {
-		host: "sapphire-peerjs.herokuapp.com",
+		host: "pixel-tool.herokuapp.com",
 		secure: true,
 		port: 443,
 	});
